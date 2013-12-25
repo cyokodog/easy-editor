@@ -1,0 +1,248 @@
+/* ================
+component
+================ */
+div.my-contents{
+	margin:8px;
+}
+div.ex-code-prettify-contents{
+	margin-bottom:8px;
+}
+.my-btn{
+	padding:4px 16px;
+	display:inline-block;
+	border-radius: 4px;
+	border:none;
+	border-bottom:solid 3px #1188dd;
+	background:#33aaff;
+	color:#ffffaa;
+	font-size: 100%;
+	text-decoration:none;
+}
+.my-btn:hover{
+	color:#ffccee;
+	background:#2299ee;
+}
+.my-input-group{
+	display:inline-block;
+	border-radius: 4px;
+	background:#33aaff;
+	border:solid 1px #33aaff;
+	border-bottom:solid 3px #1188dd;
+}
+.my-input-group > *{
+	padding:4px 8px;
+	display:inline-block;
+	color:#ffffaa;
+	border-radius:0;
+	border:none;
+	border-right:solid 1px #1188dd;
+}
+.my-input-group > *:first-child{
+	border-radius:4px 0 0 4px;
+}
+.my-input-group > *:last-child{
+	border-radius: 0 4px 4px 0;
+	border-right:none;
+}
+.my-input-group > input{
+	color:#333;
+}
+.my-input-group > a:hover{
+	color:#ffccee;
+	background:#2299ee;
+}
+.my-input-group .my-caret{
+	border-top-color:#ffffaa;
+}
+.my-caret{
+	content: "";
+	display:inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid #333;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+
+
+.easy-editor-samples{
+	display:none;
+}
+
+/* app conponent */
+.show-toggle .my-caret{
+	border-top:none;
+	border-bottom: 4px solid #333;
+}
+
+
+/* ================
+mobile design
+================ */
+
+/* layout */
+html,
+body{
+	border:none;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+div.my-header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	overflow:hidden;
+	line-height: 1.2;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:13px;
+	background:#66bbff;
+	color:#f8f8f8;
+}
+	div.my-header a{
+		text-decoration:none;
+	}
+	div.my-header .my-logo,
+	div.my-header .my-logo h1{
+		margin:0;
+		font-size:12px;
+		font-family:Arial;
+	}
+	div.my-header .my-logo h1 a{
+		color:#ffdddd;
+	}
+	.my-mobile .my-logo h1,
+	.my-mobile .my-logo .my-lead{
+		margin-left:8px;
+		display:inline;
+	}
+
+
+	div.my-header div.my-tool-a,
+	div.my-header div.my-tool-b,
+	div.my-header div.my-tool-c{
+		margin-bottom:8px;
+	}
+	.my-tool-b{
+		margin-top:-10px;
+		padding:8px;
+		display:none;
+		border-radius:0 0 4px 4px;
+		background:#33aaff;
+		z-index:999;
+		position:relative;
+		border-bottom:solid 3px #1188dd;
+
+	}
+	.my-tool-b ul{
+		margin:0;
+		padding:0;
+		max-height:120px;
+		overflow:auto;
+	}
+
+	.my-tool-b ul li{
+		margin:0;
+		padding:0;
+		display:block;
+		list-style:none;
+		border-bottom:solid 1px #30a4f4;
+	}
+	.my-tool-b ul li:last-child{
+		border-bottom:none;
+	}
+	.my-tool-b a{
+		padding:4px 0 8px;
+		display:block;
+		color:#f0f0f0;
+	}
+	.my-tool-b a:hover{
+		display:block;
+		color:#ffaacc;
+	}
+	.my-mobile .my-input-group{
+		display:block;
+	}
+	.my-mobile .my-input-group > *{
+		padding-left:1%;
+		padding-right:0;
+	}
+	.my-mobile input.my-save-name{
+		width:58%;
+	}
+	.my-mobile a.my-load-btn{
+		width:8%;
+		text-align:center
+	}
+	.my-mobile a.my-save-btn{
+		width:28%;
+		text-align:center
+	}
+div.my-contents-demo{
+	padding-bottom:1000px;
+}
+div.my-panel-code,
+div.my-panel-demo{
+	height:auto;
+	overflow: hidden;
+}
+
+
+/* ================
+pc design
+================ */
+
+/* pc conponent */
+.my-pc div.my-contents{
+	margin:16px 32px;
+}
+.my-pc div.ex-code-prettify-contents{
+	margin-bottom:16px;
+}
+
+.my-pc div.my-contents-demo{
+	padding-bottom:0;
+	height:100%;
+}
+
+
+/* layout */
+.my-pc .my-header .my-logo{
+	text-align:left;
+	float:left;
+}
+.my-pc 	div.my-header .my-logo h1 a{
+	font-size:24px;
+}
+.my-pc .my-tool-b ul{
+	max-height:220px;
+}
+
+
+.my-pc div.my-main{
+	overflow:hidden;
+}
+.my-pc div.my-main div.my-panel-code,
+.my-pc div.my-main div.my-panel-demo{
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height:100%;
+	overflow: auto;
+}
+.my-pc .my-tool{
+	float:right;
+}
+.my-pc input.my-save-name{
+	width:200px;
+}
+.my-pc a.my-load-btn{
+	width:auto;
+}
+.my-pc a.my-save-btn{
+	width:auto;
+}
+

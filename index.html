@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Easy Editor</title>
+<link href="jquery.ex-code-prettify.css" rel="stylesheet" type="text/css" media="screen" >
+<link href="easy-editor.css" rel="stylesheet" type="text/css" media="screen" >
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="google-code-prettify/prettify.js"></script>
+<script src="jquery.ex-code-prettify.js"></script>
+<script src="behave/behave.js"></script>
+<script src="easy-editor.js"></script>
+<script>
+jQuery(function($){
+	$('span.my-jquery-version').text($().jquery);
+	new $.easyEditor();
+});
+</script>
+</head>
+<body>
+<div class="my-contents-demo">
+	<div class="my-header">
+		<div class="my-contents">
+			<div class="my-logo"><h1><a href="#">EASY EDITOR</a></h1><div class="my-lead">BUILT-IN JQUERY <span class="my-jquery-version"></span></div></div><div
+			class="my-tool">
+				<div class="my-tool-a">
+					<span class="my-input-group">
+						<input class="my-input my-save-name" value="Temporary"/><a class="my-load-btn" href="javascript:void(0)"><span class="my-caret"></span></a><a class="my-save-btn" href="javascript:void(0)">保存</a>
+					</span>
+				</div>
+				<div class="my-tool-b">
+					<ul class="my-save-list">
+					</ul>
+				</div>
+				<div class="my-tool-c">
+					<a class="run-button my-btn" href="javascript:void(0)">実行</a>
+					<a class="my-del-btn my-btn" href="javascript:void(0)">削除</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="my-main fit-height" data-fit-height-for="div.my-header">
+		<div class="my-panel my-panel-code">
+			<div class="my-contents easy-editor-code">
+
+<textarea class="code" data-ex-code-prettify-param="{codeType:'cssFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'jsFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'script'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'css'}">
+</textarea>
+
+
+			</div>
+		</div><div 
+		class="my-panel my-panel-demo">
+			<div class="my-contents demo-area">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="easy-editor-samples">
+	<div class="easy-editor-sample" data-code-id="Temporary">
+<textarea class="code" data-ex-code-prettify-param="{codeType:'cssFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'jsFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+<h3 class="logo">EASY<br/>EDITOR</h3>
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'script'}">
+$('h3.logo').animate({'font-size':70},1000);
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'css'}">
+.logo{
+	font-family:arial;
+	text-align:center;
+	color:#ffaacc;
+}
+</textarea>
+	</div>
+	<div class="easy-editor-sample" data-code-id="Bootstrap">
+<textarea class="code" data-ex-code-prettify-param="{codeType:'cssFile'}">
+http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'jsFile'}">
+http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+<h4>Bootstrap Example</h4>
+<div class="progress">
+	<div class="progress-bar"></div>
+</div>
+<div class="percent input-group">
+	  <input class="form-control" value="70">
+	  <span class="input-group-addon">%</span>
+</div>
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'script'}">
+var bar = $('div.progress-bar');
+var inp = $('div.percent input');
+inp.on('keyup', (function(){
+	bar.stop().queue([]).animate({width:(inp.val()-0 || 0 ) + '%'});
+	return arguments.callee;
+})());
+
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'css'}">
+.percent{
+	width:100px;
+}
+</textarea>
+	</div>
+	<div class="easy-editor-sample" data-code-id="Blank">
+<textarea class="code" data-ex-code-prettify-param="{codeType:'cssFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'jsFile'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'script'}">
+</textarea>
+<textarea class="code" data-ex-code-prettify-param="{codeType:'css'}">
+</textarea>
+	</div>
+
+
+
+
+</div>
+
+</body>
+</html>
