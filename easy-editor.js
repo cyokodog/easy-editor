@@ -152,7 +152,7 @@
 				autoSaveToStorage : false,
 				autoLoadFromStorage : true,
 				savePrefix : o.el.saveName.val(),
-				behaveJS : true
+				behaveJS : false
 			});
 			o.adjustLayout();
 		},
